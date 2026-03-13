@@ -8,7 +8,7 @@
 
 html, body {
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: #eaeaea;
   color: #111111;
   font-family: 'DM Sans', sans-serif;
 }
@@ -53,6 +53,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  right: calc(var(--margem)*3);
 }
 
 .hero-heading {
@@ -162,7 +163,14 @@ p {
 /* ═══════════════════════════════════════
    TABLET — até 1024px
 ═══════════════════════════════════════ */
-@media (max-width: 1024px) {
+@media (max-width: 1475px) {
+
+  .hero-section {
+  right: var(--margem);
+}
+
+
+
   :root {
     --margem: 60px;
   }
@@ -198,6 +206,7 @@ p {
     width: 50%;
     height: 500px;
   }
+
 }
 
 
