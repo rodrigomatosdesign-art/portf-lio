@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rodrigo Matos</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- DM Sans font — for hero section -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rodrigo Matos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
+<!-- ── TELA 1 — HERO ── -->
 <div class="page-wrapper">
-
-  <!-- NAVBAR -->
   <nav class="navbar d-flex justify-content-between align-items-center w-100">
     <a class="navbar-brand ml" href="#">Rodrigo Matos</a>
     <div class="d-flex mr">
@@ -27,61 +21,91 @@
     </div>
   </nav>
 
-  <!-- HERO TEXT -->
   <div class="hero-section ml">
     <h1 class="hero-heading">
-        <strong>I'm Rodrigo</strong>
-        <span class="tagline"> — learning the craft of turning ideas into experiences people love</span>
+      <strong>I'm Rodrigo</strong>
+      <span class="tagline"> — learning the craft of turning ideas into experiences people love</span>
     </h1>
-  </div>
-
-  <!-- BOTTOM LEFT META -->
-<!-- TOOLS -->
-<div class="position-absolute bottom-0 start-0 end-0 px-3 pb-4">
-  <div class="d-flex justify-content-between">
-    
-    <!-- Esquerda — Tools -->
-    <div class="d-flex flex-column gap-2">
-      <span class="fw-light small text-black text-opacity-75">Tools</span>
-      <div class="d-flex gap-5">
-        <div class="d-flex align-items-center gap-2">
-          <img src="assets/imagens/figma.svg" alt="Figma" width="11">
-          <span class="fw-light small">Figma</span>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <img src="assets/imagens/html5.svg" alt="HTML" width="13">
-          <span class="fw-light small">HTML</span>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <img src="assets/imagens/css_old.svg" alt="CSS" width="15">
-          <span class="fw-light small">CSS</span>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <img src="assets/imagens/bootstrap.svg.png" alt="Bootstrap" width="18">
-          <span class="fw-light small">Bootstrap</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Direita — Currently Learning -->
-    <div class="d-flex flex-column gap-2 align-items-end currently-learning">
-      <span class="fw-light small text-black text-opacity-50">Currently Learning<span class="dots"></span></span>
-      <div class="d-flex flex-row gap-5 align-items-end">
-              <div class="d-flex align-items-center gap-2">
-          <img src="assets/imagens/wordpress.svg.png" alt="WordPress" width="15">
-          <span class="fw-light small text-black text-opacity-50">WordPress</span>
-        </div>
-      <div class="d-flex align-items-center gap-2">
-        <img src="assets/imagens/javascript.svg" alt="JavaScript" width="15">
-        <span class="fw-light small text-black text-opacity-50">JavaScript</span>
-      </div>
-      </div>
-    </div>
-
   </div>
 </div>
 
-<!-- Bootstrap JS -->
+<!-- ── TELA 2 — PROJETOS + FOOTER ── -->
+<div class="second-screen ">
+
+  <!-- TÍTULO CENTRADO -->
+  <div class="text-center" style="margin-bottom: 120px;">
+    <div class="text-uppercase fw-bold " style="letter-spacing: 0.1em;">Concept Projects</div>
+    <div class="fst-italic fw-light small text-black text-opacity-50">Design</div>
+  </div>
+
+  <!-- PROJETOS -->
+  <div class="d-flex flex-column projects-gap px-5 mb-5">
+
+    <!-- Projeto 1 — mockup à esquerda, VIEW à direita -->
+    <div class="row align-items-center">
+      <div class="col-6 d-flex justify-content-end pe-5">
+        <div class="project-mockup">
+          <img src="assets/imagens/AnArchive.png" alt="AnArchive" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-start ps-5">
+        <a href="#" class="project-view">View</a>
+      </div>
+    </div>
+
+    <!-- Projeto 2 — VIEW à esquerda, mockup à direita -->
+    <div class="row align-items-center">
+      <div class="col-6 d-flex justify-content-end pe-5">
+        <a href="#" class="project-view">View</a>
+      </div>
+      <div class="col-6 d-flex justify-content-start ps-5">
+        <div class="project-mockup">
+          <img src="assets/imagens/MatoZero.png" alt="MatoZero" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER — TOOLS -->
+  <div class="d-flex flex-row gap-5 mt-5 pt-4 mx-5 justify-content-between ">
+
+    <div class="d-flex flex-row gap-2">
+      <span class="small fw-light text-black text-opacity-75 m-3">Tools</span>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/figma.svg" alt="Figma" width="15">
+        <span class="fw-light small">Figma</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/html5.svg" alt="HTML" width="17">
+        <span class="fw-light small">HTML</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/css_old.svg" alt="CSS" width="19">
+        <span class="fw-light small">CSS</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/bootstrap.svg.png" alt="Bootstrap" width="22">
+        <span class="fw-light small">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row gap-2">
+      <span class="small fw-light text-black text-opacity-50 m-3 dots">Currently Learning</span>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/wordpress.svg.png" alt="WordPress" width="19">
+        <span class="fw-light small text-black text-opacity-50">WordPress</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 tool-item">
+        <img src="assets/imagens/javascript.svg" alt="JavaScript" width="19">
+        <span class="fw-light small text-black text-opacity-50">JavaScript</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
